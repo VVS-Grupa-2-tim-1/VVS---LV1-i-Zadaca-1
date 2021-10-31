@@ -38,36 +38,6 @@ kupovine = new List<Kupovina>();
 
 #endregion
 
-
-        /************************
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * ***********************************/
-
 #region Metode
 
 public void RadSaZivotinjama(string opcija, Zivotinja zivotinja)
