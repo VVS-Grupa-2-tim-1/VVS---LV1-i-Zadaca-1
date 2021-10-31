@@ -83,7 +83,7 @@ namespace ZivotinjskaFarma
                             + "NAPOMENA: " + napomena + "\n"
                             + "OCJENA: " + ocjena;
 
-            for (int i = 0; i < 100000; i++)
+            
             Pregledi.Add(pregled);
         }
 
