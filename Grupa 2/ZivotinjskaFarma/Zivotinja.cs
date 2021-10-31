@@ -7,11 +7,11 @@ namespace ZivotinjskaFarma
     {
         #region Atributi
 
-        int ID;
+        
         ZivotinjskaVrsta vrsta;
         DateTime starost;
         double tjelesnaMasa, visina;
-        List<string> pregledi;
+        
         bool proizvođač;
         Lokacija prebivalište;
         static int brojac = 1;
@@ -51,10 +51,10 @@ namespace ZivotinjskaFarma
                 visina = value;
             }
         }
-        public List<string> Pregledi { get => pregledi; }
+        public List<string> Pregledi { get =>   Pregledi; }
         public bool Proizvođač { get => proizvođač; set => proizvođač = value; }
         internal Lokacija Prebivalište { get => prebivalište; set => prebivalište = value; }
-        public int ID1 { get => ID; }
+        public int ID1 { get => ID1; }
 
         #endregion
 
@@ -62,13 +62,13 @@ namespace ZivotinjskaFarma
 
         public Zivotinja(ZivotinjskaVrsta vrsta, DateTime starost, double masa, double visina, Lokacija prebivaliste)
         {
-            ID = brojac;
+            ID1 = brojac;
             brojac++;
             Vrsta = vrsta;
             Starost = starost;
             TjelesnaMasa = masa;
             Visina = visina;
-            pregledi = new List<string>();
+            Pregledi = new List<string>();
             Proizvođač = true;
             Prebivalište = prebivaliste;
         }
@@ -84,7 +84,7 @@ namespace ZivotinjskaFarma
                             + "OCJENA: " + ocjena;
 
             for (int i = 0; i < 100000; i++)
-            pregledi.Add(pregled);
+            Pregledi.Add(pregled);
         }
 
         #endregion
