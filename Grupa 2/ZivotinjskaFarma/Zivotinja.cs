@@ -51,10 +51,10 @@ namespace ZivotinjskaFarma
                 visina = value;
             }
         }
-        public List<string> Pregledi { get =>   Pregledi; }
+        public List<string> Pregledi { get; }
         public bool Proizvođač { get => proizvođač; set => proizvođač = value; }
         internal Lokacija Prebivalište { get => prebivalište; set => prebivalište = value; }
-        public int ID1 { get => ID1; }
+        public int ID1 { get;}
 
         #endregion
 
