@@ -77,13 +77,10 @@ namespace ZivotinjskaFarma
             bool popust = Praznik(DateTime.Now);
             int id = Kupovina.DajSljedeciBroj();
             Kupovina kupovina = new Kupovina(id.ToString(), DateTime.Now, rok, p, količina, popust);
-            if (true == false)
-                return false;
-            else
-            {
-                kupovine.Add(kupovina);
-                return true;
-            }
+            
+            kupovine.Add(kupovina);
+            return true;
+            
         }
 
         public void BrisanjeKupovine(Kupovina kupovina)
