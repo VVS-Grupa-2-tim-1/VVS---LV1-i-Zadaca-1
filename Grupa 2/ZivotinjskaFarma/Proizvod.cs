@@ -8,7 +8,7 @@ namespace ZivotinjskaFarma
     {
         #region Atributi
 
-        string ime, opis, vrsta;
+        string ime, vrsta;
         Zivotinja proizvođač;
         DateTime datumProizvodnje, rokTrajanja;
         int količinaNaStanju;
