@@ -7,13 +7,11 @@ namespace ZivotinjskaFarma
     public class Lokacija
     {
 
-        // string atributi
+      
         string naziv, adresa, grad, država;
-        // brojevi
+   
         int brojUlice, poštanskiBroj;
-        /// <summary>
-        /// površina
-        /// </summary>
+    
         double površina;
 
 
