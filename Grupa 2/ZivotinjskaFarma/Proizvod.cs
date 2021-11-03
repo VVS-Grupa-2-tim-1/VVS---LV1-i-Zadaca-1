@@ -12,8 +12,8 @@ namespace ZivotinjskaFarma
 
         string ime, opis, vrsta;
         Zivotinja proizvođač;
-        DateTime datum_proizvodnje, rok_trajanja;
-        int količina_na_stanju;
+        DateTime datumProizvodnje, rokTrajanja;
+        int količinaNaStanju;
 
         #endregion
 
@@ -36,16 +36,16 @@ namespace ZivotinjskaFarma
             }
         }
         public Zivotinja Proizvođač { get => proizvođač; set => proizvođač = value; }
-        public DateTime DatumProizvodnje { get => datum_proizvodnje; set => datum_proizvodnje = value; }
-        public DateTime RokTrajanja { get => rok_trajanja; set => rok_trajanja = value; }
+        public DateTime DatumProizvodnje { get => datumProizvodnje; set => datumProizvodnje = value; }
+        public DateTime RokTrajanja { get => rokTrajanja; set => rokTrajanja = value; }
         public int KoličinaNaStanju
         { 
-            get => količina_na_stanju;
+            get => količinaNaStanju;
             set
             {
                 if (value < 1 || value > 1)
                     throw new ArgumentOutOfRangeException("Količina ne smije biti manja od 1!");
-                količina_na_stanju = value;
+                količinaNaStanju = value;
             }
         }
 
