@@ -27,7 +27,6 @@ namespace ZivotinjskaFarma
         public DateTime RokIsporuke { get => datumKupovine; set => rokIsporuke = value; }
         public Proizvod KupljeniProizvod { get => kupljeniProizvod; set => kupljeniProizvod = value; }
         public int Kolicina { get => kolicina; set => kolicina = value; }
-        /* KOMENTAR */
         public bool Popust { get => popust; set => popust = value; }
 
         #endregion
