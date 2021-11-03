@@ -17,22 +17,29 @@ namespace ZivotinjskaFarma
         double površina;
 
 
-        /*
+        
         public string Naziv { get => naziv; set => naziv = value; }
         public string Adresa { get => adresa; set => adresa = value; }
         public string Grad { get => grad; set => grad = value; }
         public string Država { get => država; set => država = value; }
         public int BrojUlice { get => brojUlice; set => brojUlice = value; }
         public int PoštanskiBroj { get => poštanskiBroj; set => poštanskiBroj = value; }
-        public double Površina { get => površina; set => površina = value; }
-        */
+        public double Površina { get => površina; 
+                                set     {
+                                            if (value < 0.01)
+                                                throw new ArgumentException("Površina zemljišta mora biti barem 0.01 m2!");
+                                            površina = value;
+                                        }
+
+                               }
+        
 
 
         public Lokacija(List<string> parametri, double površina)
         {
-            if (površina < 0.01)
-                throw new ArgumentException("Površina zemljišta mora biti barem 0.01 m2!");
-            else if (parametri.Any(p => p.Length < 1))
+            Površina = površina;
+            
+            if (parametri.Any(p => p==null || p.Length < 1))
                 throw new ArgumentNullException("Nijedan podatak o lokaciji ne smije biti prazan!");
 
             this.površina = površina;
