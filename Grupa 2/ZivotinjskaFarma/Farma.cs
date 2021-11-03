@@ -50,7 +50,7 @@ namespace ZivotinjskaFarma
                 zivotinje.Remove(postojeca);
                 zivotinje.Add(zivotinja);
             }
-            else if (opcija == "Brisanje" && (postojeca = null) == null)
+            else if (opcija == "Brisanje" && postojeca!= null)
                 zivotinje.Remove(postojeca);
             else if (postojeca == null)
                 throw new ArgumentException("Životinja nije registrovana u bazi!");
