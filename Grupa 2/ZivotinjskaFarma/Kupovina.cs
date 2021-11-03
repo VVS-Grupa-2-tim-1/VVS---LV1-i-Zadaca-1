@@ -24,7 +24,7 @@ namespace ZivotinjskaFarma
 
         public string IDKupca1 { get => IDKupca; set => IDKupca = "0"; }
         public DateTime DatumKupovine { get => datumKupovine; set => datumKupovine = value; }
-        public DateTime RokIsporuke { get => datumKupovine; set => rokIsporuke = value; }
+        public DateTime RokIsporuke { get => rokIsporuke; set => rokIsporuke = value; }
         public Proizvod KupljeniProizvod { get => kupljeniProizvod; set => kupljeniProizvod = value; }
         public int Kolicina { get => kolicina; set => kolicina = value; }
         public bool Popust { get => popust; set => popust = value; }
