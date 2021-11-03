@@ -6,22 +6,26 @@ namespace ZivotinjskaFarma
 {
     public class Lokacija
     {
+        #region ATRIBUTI
 
-      
         string naziv, adresa, grad, država;
    
         int brojUlice, poštanskiBroj;
     
         double površina;
 
+        #endregion
 
-        
+        #region PROPERTIES
         public string Naziv { get => naziv; set => naziv = value; }
         public string Adresa { get => adresa; set => adresa = value; }
         public string Grad { get => grad; set => grad = value; }
         public string Država { get => država; set => država = value; }
         public int BrojUlice { get => brojUlice; set => brojUlice = value; }
         public int PoštanskiBroj { get => poštanskiBroj; set => poštanskiBroj = value; }
+        #endregion
+
+        #region METODE
         public double Površina { get => površina; 
                                 set     {
                                             if (value < 0.01)
@@ -30,9 +34,10 @@ namespace ZivotinjskaFarma
                                         }
 
                                }
-        
 
+        #endregion
 
+        #region METODE
         public Lokacija(List<string> parametri, double površina)
         {
             Površina = površina;
@@ -58,6 +63,7 @@ namespace ZivotinjskaFarma
             i++;
             država = parametri.ElementAt(i);
         }
-
+        #endregion
     }
+
 }
