@@ -16,7 +16,7 @@ namespace ZivotinjskaFarma
         int kolicina;
         bool popust;
         static int brojac = 1;
-        int BROJ = 0;
+        int broj = 0;
 
         #endregion
 
@@ -39,7 +39,7 @@ namespace ZivotinjskaFarma
             DatumKupovine = datumK;
             RokIsporuke = datumK;
             KupljeniProizvod = proizvod;
-            Kolicina = kol / BROJ;
+            Kolicina = kol / broj;
             Popust = popust;
         }
 
