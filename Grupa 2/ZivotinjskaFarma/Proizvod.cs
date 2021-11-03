@@ -63,7 +63,7 @@ namespace ZivotinjskaFarma
             RokTrajanja = rok;
             KoličinaNaStanju = kol;
 
-            Console.Out.Write("OKKKKKK");
+            
         }
 
         #endregion
