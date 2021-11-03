@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Tarik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\ZivotinjskaFarma.csproj",
+      "projectUniqueName": "C:\\Users\\Tarik\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\ZivotinjskaFarma.csproj",
       "projectName": "ZivotinjskaFarma",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\ZivotinjskaFarma.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\obj\\",
+      "projectPath": "C:\\Users\\Tarik\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\ZivotinjskaFarma.csproj",
+      "packagesPath": "C:\\Users\\Tarik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tarik\\Documents\\GitHub\\VVS---LV1-i-Zadaca-1\\Grupa 2\\ZivotinjskaFarma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tarik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

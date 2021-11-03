@@ -37,7 +37,7 @@ namespace ZivotinjskaFarma
 
         #endregion
 
-        #region METODE
+        #region KONSTRUKTOR
         public Lokacija(List<string> parametri, double površina)
         {
             Površina = površina;
