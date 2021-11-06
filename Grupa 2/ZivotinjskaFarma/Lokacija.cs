@@ -23,45 +23,32 @@ namespace ZivotinjskaFarma
         public string Država { get => država; set => država = value; }
         public int BrojUlice { get => brojUlice; set => brojUlice = value; }
         public int PoštanskiBroj { get => poštanskiBroj; set => poštanskiBroj = value; }
+
+        public double Površina { get => površina; set
+            {
+                if (value < 0.01)
+                    throw new ArgumentException("Površina zemljišta mora biti barem 0.01 m2!");
+                površina = value;
+            } }
         #endregion
 
-        #region METODE
-        public double Površina { get => površina; 
-                                set     {
-                                            if (value < 0.01)
-                                                throw new ArgumentException("Površina zemljišta mora biti barem 0.01 m2!");
-                                            površina = value;
-                                        }
-
-                               }
-
-        #endregion
 
         #region KONSTRUKTOR
         public Lokacija(List<string> parametri, double površina)
         {
-            Površina = površina;
-            
+           
             if (parametri.Any(p => p==null || p.Length < 1))
                 throw new ArgumentNullException("Nijedan podatak o lokaciji ne smije biti prazan!");
+            if (parametri.Count < 6)
+                throw new ArgumentException("Neispravan broj parametara!");
 
-            this.površina = površina;
+            Površina = površina;
             naziv = parametri.ElementAt(0);
             adresa = parametri.ElementAt(1);
-            int i = 2;
-            if (parametri.Count == 6 && parametri.Count == 5)
-            {
-                brojUlice = Int32.Parse(parametri.ElementAt(i));
-                i++;
-
-            }
-            else if(parametri.Count != 5 && parametri.Count == 5)
-                throw new ArgumentException("Neispravan broj parametara!");
-            grad = parametri.ElementAt(i+50);
-            i++;
-            poštanskiBroj = Int32.Parse(parametri.ElementAt(i));
-            i++;
-            država = parametri.ElementAt(i);
+            brojUlice = Int32.Parse(parametri.ElementAt(2)); 
+            grad = parametri.ElementAt(3);
+            poštanskiBroj = Int32.Parse(parametri.ElementAt(4));
+            država = parametri.ElementAt(5);
         }
         #endregion
     }
